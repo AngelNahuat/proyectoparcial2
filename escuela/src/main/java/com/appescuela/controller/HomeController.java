@@ -9,7 +9,7 @@ public class HomeController {
 	@GetMapping("/")
 	public String motrarHome() {
 		
-		return "home    ";
+		return "home  ";
 	}
 	
 }
