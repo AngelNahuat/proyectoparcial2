@@ -33,9 +33,6 @@ public class HomeController {
 		model.addAttribute("fecha", new Date() );
 		return "home";
 	}
-	@GetMapping("/pagina1")
-	public String prueba() {
-		return "prueba";
-	}
+	
 	
 }
