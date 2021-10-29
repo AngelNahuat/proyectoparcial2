@@ -27,11 +27,20 @@ public class HomeController {
 		lista.add("Lectura, Expresión Oral\r\n"
 				+ "y Escrita I");
 		
+
 		
 		
 		model.addAttribute("asignaturasP", lista);
 		
 		
+
+		model.addAttribute("carreras", lista);
+		System.out.println("prueba");
+		System.out.println("prueba");
+		System.out.println("prueba");
+		System.out.println("prueba");
+		System.out.println("prueba");
+		System.out.println("prueba");
 
 		return "listadoP";
 		
@@ -67,7 +76,7 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String motrarHome(Model model) {
-		         
+		     
 		model.addAttribute("mensaje", "Bienvenidos a Pagina/Escuela");
 		model.addAttribute("fecha", new Date() );
 		return "home";
