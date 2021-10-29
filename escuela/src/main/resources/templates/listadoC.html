@@ -3,12 +3,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Listado las Carreras</title>
-</head>
+</head> 
 <body>
 
-	<h1>Carreras que estan Disponibles</h1>
+
+	<h1>Materias Ofertadas</h1>
+	<h2>Contabilidad</h2>
 	<ol>
-		<li th:each="tmpCarre:${carreras}" th:text="${tmpCarre}"> </li>
+		<li th:each="tmpCarre:${asignaturasC}" th:text="${tmpCarre}"> </li>
 	</ol>
 
 </body>
