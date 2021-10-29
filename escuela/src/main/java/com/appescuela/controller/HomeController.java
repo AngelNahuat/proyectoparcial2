@@ -26,9 +26,16 @@ public class HomeController {
 	@GetMapping("/")
 	public String motrarHome(Model model) {
 		
+		model.addAttribute("mensaje", "Bienvenidos a Pagina Escuela");
+		model.addAttribute("fecha", new Date() );
+
 		model.addAttribute("mensaje", "Bienvenidos a Pagina-Escuela");
 		model.addAttribute("fecha", new Date() );
 		return "home";
+	}
+	@GetMapping("/pagina1")
+	public String prueba() {
+		return "prueba";
 	}
 	
 }
