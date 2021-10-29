@@ -21,6 +21,8 @@ public class HomeController {
 		model.addAttribute("carreras", lista);
 		System.out.println("prueba");
 		System.out.println("prueba");
+		System.out.println("prueba");
+
 		return "listado";
 	}
 
