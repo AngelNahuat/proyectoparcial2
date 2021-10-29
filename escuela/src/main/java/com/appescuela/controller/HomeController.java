@@ -28,13 +28,7 @@ public class HomeController {
 				+ "y Escrita I");
 		
 
-		
-		
 		model.addAttribute("asignaturasP", lista);
-		
-		
-
-		model.addAttribute("carreras", lista);
 		
 
 		return "listadoP";
