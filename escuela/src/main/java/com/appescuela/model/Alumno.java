@@ -54,6 +54,13 @@ public class Alumno {
 	}
 	
 	
+	//To string
+	@Override
+	public String toString() {
+		return "Alumno [NumMatricula=" + NumMatricula + ", Nombre=" + Nombre + ", FechaNacimiento=" + FechaNacimiento
+				+ ", Telefono=" + Telefono + ", Fotografia=" + Fotografia + ", Carrera=" + Carrera + "]";
+	}
+	
 	
 	
 	
