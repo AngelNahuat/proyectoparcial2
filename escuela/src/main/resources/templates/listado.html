@@ -2,11 +2,11 @@
 <html xmlns:th= "http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Listado de Carreras</title>
+<title>Listado de las Carreras</title>
 </head>
 <body>
 
-	<h1>Carreras Disponibles</h1>
+	<h1>Carreras que estan Disponibles</h1>
 	<ol>
 		<li th:each="tmpCarre:${carreras}" th:text="${tmpCarre}"> </li>
 	</ol>
