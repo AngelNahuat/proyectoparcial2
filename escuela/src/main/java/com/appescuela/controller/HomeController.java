@@ -19,9 +19,10 @@ public class HomeController {
 		lista.add("Contabilidad");
 		
 		model.addAttribute("carreras", lista);
+		System.out.println("prueba");
 		return "listado";
 	}
-	
+
 	
 	@GetMapping("/")
 	public String motrarHome(Model model) {
