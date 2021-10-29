@@ -29,5 +29,14 @@ public class Asignatura {
 		Detalle = detalle;
 	}
 	
+	//To string
+	@Override
+	public String toString() {
+		return "Asignatura [CodAsignatura=" + CodAsignatura + ", nombre=" + nombre + ", Detalle=" + Detalle + "]";
+	}
+	
+	
+	
+	
 	
 }

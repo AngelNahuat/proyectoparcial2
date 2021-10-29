@@ -50,6 +50,14 @@ public class Profesor {
 	}
 	
 	
+	//To string
+	@Override
+	public String toString() {
+		return "Profesor [IdProfesor=" + IdProfesor + ", NIF_P=" + NIF_P + ", Nombre=" + Nombre + ", Especialidad="
+				+ Especialidad + ", Telefono=" + Telefono + ", Fotografia=" + Fotografia + "]";
+	}
+	
+	
 	
 	
 	
