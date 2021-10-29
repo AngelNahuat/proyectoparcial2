@@ -15,7 +15,7 @@ public class HomeController {
 	public String motrarListado(Model model) {
 		
 		List<String> lista = new LinkedList<String>();
-		lista.add("Programacion");
+		lista.add("Programacion"); 
 		lista.add("Contabilidad");
 		
 		model.addAttribute("carreras", lista);
