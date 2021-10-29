@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Alumno {
 
-	//puto fabian
+	//prueba
 	
 	private Integer NumMatricula ;
 	private String Nombre;
