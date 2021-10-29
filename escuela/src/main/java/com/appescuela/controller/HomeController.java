@@ -14,7 +14,7 @@ public class HomeController {
 	@GetMapping("/listadoP")
 	public String motrarListadoP(Model model) {
 		
-		//Prueba 3:10 
+		//Prueba 3:10   
 		//listado de materias Prtogramacion
 		List<String> lista = new LinkedList<String>();
 		lista.add("Álgebra"); 
