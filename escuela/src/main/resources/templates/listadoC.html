@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th= "http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado las Carreras</title>
+</head> 
+<body>
+
+
+	<h1>Materias Ofertadas</h1>
+	<h2>Contabilidad</h2> 
+	<ol>
+		<li th:each="tmpCarre:${asignaturasC}" th:text="${tmpCarre}"> </li>
+	</ol>
+
+</body>
+</html>

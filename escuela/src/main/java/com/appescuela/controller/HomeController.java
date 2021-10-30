@@ -11,17 +11,55 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	@GetMapping("/listado")
-	public String motrarListado(Model model) {
-		
+	@GetMapping("/listadoP")
+	public String motrarListadoP(Model model) {
+		   
+		//Prueba 3:12 
+		//listado de materias Prtogramacion
 		List<String> lista = new LinkedList<String>();
-		lista.add("Programacion"); 
-		lista.add("Contabilidad");
+		lista.add("Álgebra"); 
+		lista.add(" Inglés I\r\n"+ " ");
+		lista.add("Química I ");
+		lista.add("Tecnologías de\r\n"
+				+ "la Información y\r\n"
+				+ "la Comunicación");
+		lista.add("Lógica");
+		lista.add("Lectura, Expresión Oral\r\n"
+				+ "y Escrita I");
 		
-		model.addAttribute("carreras", lista);
-		System.out.println("prueba");
-		System.out.println("prueba");
-		return "listado";
+
+		model.addAttribute("asignaturasP", lista);
+		
+
+		return "listadoP";
+		
+	}
+	
+	
+	@GetMapping("/listadoC")
+	public String motrarListadoC(Model model) {
+		
+		
+		//listado de materias Contabilidad
+		List<String> lista = new LinkedList<String>();
+				lista.add("Álgebra"); 
+				lista.add(" Inglés I\r\n"+ " ");
+				lista.add("Química I ");
+				lista.add("Tecnologías de\r\n"
+						+ "la Información y\r\n"
+						+ "la Comunicación");
+				lista.add("Lógica");
+				lista.add("Lectura, Expresión Oral\r\n"
+						+ "y Escrita I");
+				
+		
+		
+		model.addAttribute("asignaturasC", lista);
+		
+		
+
+		return "listadoC";
+		
 	}
 
 	
