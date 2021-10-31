@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th= "http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Listado las Carreras</title>
-<!-- Bootstrap core CSS -->
-<link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link th:href="@{bootstrap/css/jumbotron.css}" rel="stylesheet">
-<link th:href="@{bootstrap/css/sticky-footer-navbar.css}"
-	rel="stylesheet">
 </head>
 <body>
 
-	<header th:insert="fragments/menu :: menu-principal">
-      
-    </header>
-	<h1 class="display-4">Materias Ofertadas</h1>
-
+	<h1>Materias Ofertadas</h1>
+	
 	<h2>Programacion</h2>
 	<ol>
-		<li th:each="tmpCarre:${asignaturasP}" th:text="${tmpCarre}"></li>
+		<li th:each="tmpCarre:${asignaturasP}" th:text="${tmpCarre}"> </li>
 	</ol>
-
-
-
-	<footer class="footer">
-		<div class="container">
-			<p>
-				&copy; 2019 EmpleosApp, Inc. | WebApp Desarrollada con Spring Boot
-				2.1.2 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a
-					href="#">Privacy</a> &middot; <a href="#">Terms</a>
-			</p>
-		</div>
-	</footer>
-
-
+	
+	
+	
+	
+	
+	
 
 </body>
 </html>

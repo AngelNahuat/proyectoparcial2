@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	@GetMapping("/materiasProgramacion")
+	@GetMapping("/listadoP")
 	public String motrarListadoP(Model model) {
 		   
-		//Prueba 9:38
-		//listado de materias Programacion
+		//Prueba 3:12 
+		//listado de materias Prtogramacion
 		List<String> lista = new LinkedList<String>();
 		lista.add("Álgebra"); 
 		lista.add(" Inglés I\r\n"+ " ");
@@ -35,39 +35,11 @@ public class HomeController {
 		
 	}
 	
-	//prueba de los formularios
 	
-	@GetMapping("/formProfesor")
-	public String formProfesor() {
-		
-		return "formProfesor";
-	}
-	
-	
-	@GetMapping("/registrarse")
-	public String registrarse() {
-		
-		return "registrarse";
-	}
-	
-	
-	@GetMapping("/detallesProgramacion")
-	public String detallesP() {
-		
-		return "detallesP";
-	}
-	
-	@GetMapping("/detallesContabilidad")
-	public String detallesC() {
-		
-		return "detallesC";
-	}
-	
-	
-	
-	@GetMapping("/materiasContabilidad")
+	@GetMapping("/listadoC")
 	public String motrarListadoC(Model model) {
-	
+		
+		
 		//listado de materias Contabilidad
 		List<String> lista = new LinkedList<String>();
 				lista.add("Álgebra"); 
