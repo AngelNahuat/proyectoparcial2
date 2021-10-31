@@ -2,36 +2,54 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<title>Insert title here</title>
-
-
-=======
->>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
-=======
->>>>>>> refs/remotes/origin/master
 <title>Pagina Principal</title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{bootstrap/css/jumbotron.css}" rel="stylesheet">
+    <link th:href="@{bootstrap/css/sticky-footer-navbar.css}" rel="stylesheet">
 </head>
 <body>
-	<h1 th:text="${mensaje}"></h1>
-	<h2>Hoy es[[${fecha}]]</h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<H1>holaaaaa</H1>
-=======
->>>>>>> refs/remotes/origin/master
-=======
-	<h1>>Prueba</h1>
->>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
-	
-<<<<<<< HEAD
-=======
-	
->>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
-=======
->>>>>>> refs/remotes/origin/master
+  <header th:insert="fragments/menu :: menu-principal">
+      
+    </header>
+    
+        <h1 style="margin-top:50px" class="display-4 text-center">Escoja la carrera para ver sus detalles</h1>
+      <div class="row justify-content-around" style="margin-top:50px">
+  <div class="col-sm-6" >
+    <div class="card"  >
+      <div class="card-body">
+        <h5 class="card-title">Programacion</h5>
+        <p class="card-text">Carrera programacion.</p>
+        <a href="/detallesProgramacion" class="btn btn-outline-primary">Ver detalles</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6"  >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Contabilidad</h5>
+        <p class="card-text">Carrera contabilidad.</p>
+        <a href="/detallesContabilidad" class="btn btn-outline-primary">Ver detalles</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2019 EmpleosApp, Inc. | WebApp Desarrollada con Spring Boot 2.1.2 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a href="#">Privacy</a>
+          &middot; <a href="#">Terms</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>   
 </body>
 </html>
