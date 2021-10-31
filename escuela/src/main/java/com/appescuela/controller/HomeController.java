@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	@GetMapping("/listadoP")
+	@GetMapping("/materiasProgramacion")
 	public String motrarListadoP(Model model) {
 		   
 		//Prueba 3:12 
@@ -34,9 +34,23 @@ public class HomeController {
 		return "listadoP";
 		
 	}
+	@GetMapping("/registrarse")
+	public String registrarse() {
+		
+		return "registrarse";
+	}
+	@GetMapping("/detallesProgramacion")
+	public String detallesP() {
+		
+		return "detallesP";
+	}
+	@GetMapping("/detallesContabilidad")
+	public String detallesC() {
+		
+		return "detallesC";
+	}
 	
-	
-	@GetMapping("/listadoC")
+	@GetMapping("/materiasContabilidad")
 	public String motrarListadoC(Model model) {
 		
 		
