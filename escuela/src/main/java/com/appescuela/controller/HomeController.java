@@ -34,11 +34,15 @@ public class HomeController {
 		return "listadoP";
 		
 	}
+	
+	
 	@GetMapping("/registrarse")
 	public String registrarse() {
 		
 		return "registrarse";
 	}
+	
+	
 	@GetMapping("/detallesProgramacion")
 	public String detallesP() {
 		
