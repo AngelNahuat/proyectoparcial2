@@ -35,6 +35,14 @@ public class HomeController {
 		
 	}
 	
+	//prueba de los formularios
+	
+	@GetMapping("/formProfesor")
+	public String formProfesor() {
+		
+		return "formProfesor";
+	}
+	
 	
 	@GetMapping("/registrarse")
 	public String registrarse() {
@@ -48,16 +56,18 @@ public class HomeController {
 		
 		return "detallesP";
 	}
+	
 	@GetMapping("/detallesContabilidad")
 	public String detallesC() {
 		
 		return "detallesC";
 	}
 	
+	
+	
 	@GetMapping("/materiasContabilidad")
 	public String motrarListadoC(Model model) {
-		
-		
+	
 		//listado de materias Contabilidad
 		List<String> lista = new LinkedList<String>();
 				lista.add("Álgebra"); 
