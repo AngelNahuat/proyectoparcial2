@@ -14,23 +14,43 @@ import com.appescuela.service.IMateriasPService;
 
 @Controller
 public class HomeController {
+<<<<<<< HEAD
 	@Autowired
 	private IMateriasPService materiasPService;
 	@GetMapping("/materiasProgramacion")
+=======
+
+	@GetMapping("/listadoP")
+>>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
 	public String motrarListadoP(Model model) {
 		   
+<<<<<<< HEAD
 		//Prueba 9:38
 		//listado de materias Programacion
 		List<List<String>> lista = materiasPService.buscarTodas();
 		model.addAttribute("materiasP",lista);
+=======
+		//Prueba 3:12 
+		//listado de materias Prtogramacion
+		List<String> lista = new LinkedList<String>();
+		lista.add("Álgebra"); 
+		lista.add(" Inglés I\r\n"+ " ");
+		lista.add("Química I ");
+		lista.add("Tecnologías de\r\n"
+				+ "la Información y\r\n"
+				+ "la Comunicación");
+		lista.add("Lógica");
+		lista.add("Lectura, Expresión Oral\r\n"
+				+ "y Escrita I");
+>>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
 		
 		System.out.println(lista);
 		return "listadoP";
 		
 	}
 	
-	//prueba de los formularios
 	
+<<<<<<< HEAD
 	@GetMapping("/formProfesor")
 	public String formProfesor() {
 		
@@ -69,8 +89,12 @@ public class HomeController {
 	
 	
 	@GetMapping("/materiasContabilidad")
+=======
+	@GetMapping("/listadoC")
+>>>>>>> branch 'master' of https://github.com/AngelNahuat/proyectoparcial2.git
 	public String motrarListadoC(Model model) {
-	
+		
+		
 		//listado de materias Contabilidad
 		List<String> lista = new LinkedList<String>();
 				lista.add("Álgebra"); 
