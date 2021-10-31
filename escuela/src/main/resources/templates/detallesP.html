@@ -16,8 +16,9 @@
     </header>
 	
 	
-	<h1 style="margin-top: 50px" class="display-4 text-center">Detalles
-		de la carrera de programacion.</h1>
+	<h1 style="margin-top: 25px; margin-left:50px; margin-bottom:20px" class="display-4 ">Detalles de la carrera de programacion.</h1>
+		<div class="row justify-content-around">
+		<div class="col-sm-7">
 	<p class="text-justify">En el contexto nacional la formación de
 		Técnicos en Programación es relevante porque contribuye a la formación
 		de personas capaces de integrarse a un mercado laboral dinámico y de
@@ -37,18 +38,19 @@
 		
 
 	</ul>
-		
-		<a href="/materiasProgramacion" class="btn btn-outline-primary" style="margin-left:25px">Ver materias</a>
-
-
-	<footer class="footer">
-		<div class="container">
-			<p>
-				&copy; 2019 EmpleosApp, Inc. | WebApp Desarrollada con Spring Boot
-				2.1.2 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a
-					href="#">Privacy</a> &middot; <a href="#">Terms</a>
-			</p>
+	<a href="/materiasProgramacion" class="btn btn-outline-primary" style="margin-left:25px">Ver materias</a>
+	
 		</div>
-	</footer>
+	
+		<div class="col-sm-3">
+			<img src="img/logo21.png">
+		
+		</div>
+		</div>
+		
+
+	<footer class="footer" th:insert="fragments/footer :: pie-pagina">
+
+    </footer>
 </body>
 </html>

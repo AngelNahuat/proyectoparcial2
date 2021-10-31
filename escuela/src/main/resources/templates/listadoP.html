@@ -12,28 +12,90 @@
 </head>
 <body>
 
-	<header th:insert="fragments/menu :: menu-principal">
-      
-    </header>
+	<header th:insert="fragments/menu :: menu-principal"> </header>
 	<h1 class="display-4">Materias Ofertadas</h1>
 
 	<h2>Programacion</h2>
-	<ol>
-		<li th:each="tmpCarre:${asignaturasP}" th:text="${tmpCarre}"></li>
-	</ol>
+	<div th:with="materias2=${'asdkjasbbdjas'}"></div>
+	<table class="table table-hover">
+
+		<thead class="thead-light">
+			<tr>
+				<th scope="col">Semestre I</th>
+				<th scope="col">Semestre II</th>
+				<th scope="col">Semestre III</th>
+				<th scope="col">Semestre IV</th>
+				<th scope="col">Semestre V</th>
+				<th scope="col">Semestre VI</th>
+			</tr>
+		</thead>
+
+		<tbody th:with="materias1=${materiasP[0]},materias2=${materiasP[1]},materias3=${materiasP[2]},materias4=${materiasP[3]},materias5=${materiasP[4]},materias6=${materiasP[5]}">
+			<tr>
+				<td th:text="${materias1[0]}"></td>
+				<td th:text="${materias2[0]}"></td>
+				<td th:text="${materias3[0]}"></td>
+				<td th:text="${materias4[0]}"></td>
+				<td th:text="${materias5[0]}"></td>
+				<td th:text="${materias6[0]}"></td>
+			</tr>
+			<tr>
+				<td th:text="${materias1[1]}"></td>
+				<td th:text="${materias2[1]}"></td>
+				<td th:text="${materias3[1]}"></td>
+				<td th:text="${materias4[1]}"></td>
+				<td th:text="${materias5[1]}"></td>
+				<td th:text="${materias6[1]}"></td>
+			</tr>
+			<tr>
+				
+				<td th:text="${materias1[2]}"></td>
+				<td th:text="${materias2[2]}"></td>
+				<td th:text="${materias3[2]}"></td>
+				<td th:text="${materias4[2]}"></td>
+				<td th:text="${materias5[2]}"></td>
+				<td th:text="${materias6[2]}"></td>
+			</tr>
+			<tr>
+				<td th:text="${materias1[3]}"></td>
+				<td th:text="${materias2[3]}"></td>
+				<td th:text="${materias3[3]}"></td>
+				<td th:text="${materias4[3]}"></td>
+				<td th:text="${materias5[3]}"></td>
+				<td th:text="${materias6[3]}"></td>
+			</tr>
+			<tr>
+				<td th:text="${materias1[4]}"></td>
+				<td th:text="${materias2[4]}"></td>
+				<td th:text="${materias3[4]}"></td>
+				<td th:text="${materias4[4]}"></td>
+				<td th:text="${materias5[4]}"></td>
+				<td th:text="${materias6[4]}"></td>
+			</tr>
+			<tr>
+				<td th:text="${materias1[5]}"></td>
+				<td th:text="${materias2[5]}"></td>
+				<td th:text="${materias3[5]}"></td>
+				<td th:text="${materias4[5]}"></td>
+				<td th:text="${materias5[5]}"></td>
+				<td th:text="${materias6[5]}"></td>
+			</tr>
 
 
 
-	<footer class="footer">
-		<div class="container">
-			<p>
-				&copy; 2019 EmpleosApp, Inc. | WebApp Desarrollada con Spring Boot
-				2.1.2 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a
-					href="#">Privacy</a> &middot; <a href="#">Terms</a>
-			</p>
-		</div>
+
+
+		</tbody>
+
+
+	</table>
+
+
+
+
+	<footer class="footer" th:insert="fragments/footer :: pie-pagina">
+
 	</footer>
-
 
 
 </body>

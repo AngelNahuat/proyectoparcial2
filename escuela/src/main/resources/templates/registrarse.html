@@ -2,10 +2,49 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Pagina Principal</title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{bootstrap/css/jumbotron.css}" rel="stylesheet">
+    <link th:href="@{bootstrap/css/sticky-footer-navbar.css}" rel="stylesheet">
 </head>
 <body>
+  <header th:insert="fragments/menu :: menu-principal">
+      
+    </header>
+    
+        <h1 style="margin-top:50px" class="display-4 text-center">Escoja el tipo de usuario</h1>
+      <div class="row justify-content-around" style="margin-top:50px">
+  <div class="col-sm-5" >
+    <div class="card"  >
+      <div class="card-body">
+        <h5 class="card-title">Alumno</h5>
+        <p class="card-text">Ve las materias ofertadas y busca carreras</p>
+        <a href="/formAlumno" class="btn btn-outline-primary">Registrarse como alumno</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5"  >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Profesor</h5>
+        <p class="card-text">Visualiza los grupos que impartes y sube tareas</p>
+        <a href="/formProfesor" class="btn btn-outline-primary">Registrarse como profesor</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+	<footer class="footer" th:insert="fragments/footer :: pie-pagina">
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>   
 </body>
 </html>

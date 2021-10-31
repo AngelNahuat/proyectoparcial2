@@ -27,14 +27,14 @@
       <div class="container"> 
 
         <div class="card">
-          <h4 class="card-header"><strong>Datos de el Alumno</strong></h4>              
+          <h4 class="card-header"><strong>Datos del alumno</strong></h4>              
           <div class="card-body">
             <form>              
               <div class="row">
                 <div class="col-md-3"> 
                   <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del alumno" required="required">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required="required">
                   </div>
 
                    <div class="form-group">
@@ -45,40 +45,30 @@
 
                 <div class="col-md-3"> 
                   <div class="form-group">
-                    <label for="telefono">Telefono</label>
-                    <input type="int" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required="required">
+                    <label for="telefono">Teléfono</label>
+                    <input type="int" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required="required">
+                  </div> 
+                    <div class="form-group">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Fecha de nacimiento" required="required">
                   </div> 
                 </div>    
               </div>  
 
               <div class="row">
                 <div class="col-md-3"> 
-                  <div class="form-group">
-                    <label for="categoria">Rol</label>
-                    <select class="form-control" name="categoria" id="categoria">
-                      <option value="1">Alumno</option>
-                      <option value="2">Profesor</option>
-                      <option value="3">Admin</option>
-                    </select>
-                  </div>
+            
                 </div>
 
               
-                <div class="col-md-3"> 
-                  <div class="form-group">
-                    <label for="fecha">Fecha de Nacimiento</label>
-                    <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Fecha de Nacimiento" required="required">
-                  </div>  
-                </div>
+      
                
               </div>    
               <div class="row">
-                <div class="col-md-3"> 
-                  
-                </div>
+              
                 <div class="col-md-3"> 
                   <div class="form-group">
-                    <label for="archivoImagen">Imagen</label>
+                    <label for="archivoImagen">Imagen de perfil</label>
                     <input type="file" class="form-control-file" name="archivoImagen" id="archivoImagen">
                   </div>
                 </div>
@@ -89,7 +79,7 @@
                 
                 </div> 
               </div> 
-              <button type="submit" class="btn btn-primary">Guardar</button>  
+              <button type="submit" class="btn btn-outline-primary">Guardar</button>  
             </form>
           </div>
         </div>
@@ -97,13 +87,8 @@
 
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>
-          &copy; 2019 EmpleosApp, Inc. | WebApp Desarrollada con Spring Boot 2.1.2 | Autor: Iv&aacute;n E. Tinajero D&iacute;az | &middot; <a href="#">Privacy</a>
-          &middot; <a href="#">Terms</a>
-        </p>
-      </div>
+    <footer class="footer" th:insert="fragments/footer :: pie-pagina">
+
     </footer>
 
     <!-- Bootstrap core JavaScript
