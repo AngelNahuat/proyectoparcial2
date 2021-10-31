@@ -97,8 +97,7 @@ public class HomeController {
 	@GetMapping("/")
 	public String motrarHome(Model model) {
 		     
-		model.addAttribute("mensaje", "Bienvenidos a Pagina/Escuela");
-		model.addAttribute("fecha", new Date() );
+	
 		return "home";
 	}
 	
